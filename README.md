@@ -71,5 +71,28 @@ $ git commit -m "커밋 메시지"
 ```sh
 $ git push <원격 저장소 별칭> <브랜치 이름>
 ```
-
+(번외)
+- 강제 푸시 옵션을 사용해 히스토리 내역이 맞지 않더라도 푸시할 수 있다. 이의 활용에 대해서는 후술한다.
+```sh
+$ git push --force-with-lease
+```
 ## 정보를 조회하는 명령어
+1. **git log**
+- 이 명령어를 사용하여 commit 된 내역을 조회할 수 있다.
+- `oneline` 옵션은 로그를 한줄단위로 출력하도록 한다.
+- `graph` 옵션은 브랜치가 뻗어나가는 경로를 트리형태로 시각화해 볼 수 있도록 한다.
+- `nk` (k는 숫자) 최근 k개의 commit 내역을 볼 수 있도록 한다.
+- `decorate` 옵션은 각 브랜치가 어떤 commit을 가리키고 있는지 보여준다.
+```sh
+$ git log [--oneline] [--graph] [--all] [-nk] [--decorate]
+--- example ---
+$ git log --oneline --graph --all --decorate -n4
+```
+2. **git status**
+- add 명령어를 통해 스테이징된 파일의 상태를 확인 할 수 있다.
+```sh
+$ git status
+```
+## 브랜치 관련 명령어
+## 동기화와 브랜치 병합하기
+## 커밋 되돌리기와 시간여행
