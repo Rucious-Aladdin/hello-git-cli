@@ -158,7 +158,7 @@
     $ git push --force-with-lease
     ```
 3. **git reset**
-   - 리셋 명령어는 3가지 옵션에 따라 주의해서 사용해야 한다. 
+   - 리셋 명령어는 옵션에 따라 주의해서 사용해야 한다. 
    - 특정 커밋만을 되돌리는 revert와는 달리, 그 커밋아래에 딸린 자식 커밋도 모두 되돌린다.
     ```sh
     $ git reset [--mixed] [커밋 체크섬]
@@ -172,3 +172,6 @@
     ```sh
     $ git push --force-with-lease
     ```
+
+## 문제 상황 해결
+- [병합 커밋을 남기지 않고 브랜치를 통합하는 방법](https://github.com/Rucious-Aladdin/hello-git-cli/blob/main/%EC%8B%9C%EB%82%98%EB%A6%AC%EC%98%A4%20%EC%B2%98%EC%B9%98%EC%99%80%20%EA%B3%A0%EA%B8%89%20%EA%B9%83%ED%97%88%EB%B8%8C%20%EA%B8%B0%EC%88%A0/3-way_merge_versus_rebase.md)
